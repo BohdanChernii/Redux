@@ -1,7 +1,5 @@
-import { createStore } from 'redux';
-import { increment, decrement, counterReducer } from './index.js';
+import { increment, decrement, store } from './index.js';
 
-const store = createStore(counterReducer);
 store.dispatch(increment());
 store.dispatch(increment());
 store.dispatch(increment());
