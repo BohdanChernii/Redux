@@ -1,5 +1,13 @@
-import { createStore } from 'redux';
-import { usersReducer } from './users.reducer';
+import { createStore, combineReducers } from 'redux';
+import usersReducer from './users.reducer';
+import { counterReducer } from './counter.reducer';
 
-const store = createStore(usersReducer);
+const appReducer = combineReducers({
+  counter: counterReducer,
+  users: usersReducer,
+});
+const store = createStore(
+  appReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 export default store;
