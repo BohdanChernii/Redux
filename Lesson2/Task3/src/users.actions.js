@@ -1,5 +1,5 @@
-export const ADDUSER = 'ADDUSER';
-export const DELETEUSER = 'DELETEUSER';
+export const ADDUSER = 'ADD/ADDUSER';
+export const DELETEUSER = 'DELETE/DELETEUSER';
 export const addUser = userData => {
   return {
     type: ADDUSER,

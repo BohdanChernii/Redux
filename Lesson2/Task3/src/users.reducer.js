@@ -3,7 +3,7 @@ import { ADDUSER, DELETEUSER } from './users.actions';
 const initialState = {
   usersList: [],
 };
-export const createReducer = (state = initialState, action) => {
+export const usersReducer = (state = initialState, action) => {
   const { usersList } = state;
   switch (action.type) {
     case ADDUSER:
