@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as userActions from './users.actions';
+import * as userActions from './users/users.actions';
 class Users extends React.Component {
   onUserCreate = () => {
     const id = Math.round(Math.random() * 1000000);
