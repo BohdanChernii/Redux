@@ -14,7 +14,7 @@ class Users extends React.Component {
     const { users, deleteUser } = this.props;
     return (
       <div className="users">
-        <button className="users_create-btn" onClick={this.onUserCreate}>
+        <button className="users__create-btn" onClick={this.onUserCreate}>
           Create User
         </button>
         <ul className="users__list">
