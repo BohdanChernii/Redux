@@ -25,7 +25,7 @@ const mapState = state => {
 const mapDispatch = {
   increment: counterActions.increment,
   decrement: counterActions.decrement,
-  result: counterActions.reset,
+  reset: counterActions.reset,
 };
 const connector = connect(mapState, mapDispatch);
 export default connector(Counter);
