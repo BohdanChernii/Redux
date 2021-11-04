@@ -1,5 +1,5 @@
 import { GO_NEXT, GO_PREV } from './users.actions';
-import users from '../users.js';
+import { users } from './users.js';
 const initialState = {
   users: { usersList: [...users], currentPage: 0 },
 };

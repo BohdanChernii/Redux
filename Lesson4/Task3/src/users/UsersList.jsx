@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from '../Pagination';
+import Pagination from './Pagination';
 import User from './User.jsx';
 import { goNext, goPrev } from './users.actions';
 import { connect } from 'react-redux';
