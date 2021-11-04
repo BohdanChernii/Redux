@@ -20,7 +20,7 @@ const UsersList = ({ users, goPrevPage, goNextPage, currentPage }) => {
       />
       <ul className="users">
         {usersToRender.map(user => (
-          <User key={user.id} {...user} />
+          <User key={user.id} name={user.name} age={user.age} />
         ))}
       </ul>
     </div>
