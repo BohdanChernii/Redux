@@ -1,7 +1,7 @@
 import React from 'react';
-import Pagination from './Pagination';
-import User from './User';
-import { goNext, goPrev } from './users/users.actions';
+import Pagination from '../Pagination';
+import User from '../User';
+import { goNext, goPrev } from './users.actions';
 import { connect } from 'react-redux';
 
 const itemsPerPage = 3;
