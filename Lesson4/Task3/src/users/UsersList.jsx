@@ -4,15 +4,15 @@ import User from './User.jsx';
 import { goNext, goPrev } from './users.actions';
 import { connect } from 'react-redux';
 
-const itemsPerPage = 3;
+const items_Per_Page = 3;
 const UsersList = ({ users, goPrevPage, goNextPage, currentPage }) => {
-  const endIndex = itemsPerPage * currentPage;
-  const startIndex = (currentPage - 1) * itemsPerPage;
+  const startIndex = currentPage * items_Per_Page;
+  const endIndex = startIndex + items_Per_Page;
   const usersToRender = users.slice(startIndex, endIndex);
   return (
     <div>
       <Pagination
-        itemsPerPage={itemsPerPage}
+        itemsPerPage={items_Per_Page}
         totalItems={users.length}
         goNext={goNextPage}
         goPrev={goPrevPage}
