@@ -1,6 +1,6 @@
 import React from 'react';
 import Pagination from './Pagination';
-import PropTypes from './prop-types';
+import PropTypes from 'prop-types';
 import User from './User.jsx';
 import { usersListSelector, currentPageSelector } from './users.selectors';
 import { goNext, goPrev } from './users.actions';
