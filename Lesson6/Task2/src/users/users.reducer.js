@@ -4,7 +4,7 @@ const initialData = {
   userData: null,
 };
 
-const usersReducer = (state = initialData, action) => {
+export const usersReducer = (state = initialData, action) => {
   switch (action.type) {
     case SHOW_SPINNER: {
       return {

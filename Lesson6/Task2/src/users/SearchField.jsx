@@ -38,5 +38,6 @@ SearchField.propTypes = {
 };
 const mapDispatch = {
   fetchUserData: usersActions.fetchUserData,
+  showSpinner: usersActions.showSpinner,
 };
 export default connect(null, mapDispatch)(SearchField);
