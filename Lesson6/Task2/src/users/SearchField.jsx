@@ -34,10 +34,9 @@ class SearchField extends React.Component {
   }
 }
 SearchField.propTypes = {
-  userDataReceived: PropTypes.func.isRequired,
+  fetchUserData: PropTypes.func.isRequired,
 };
 const mapDispatch = {
-  userDataReceived: usersActions.userDataReceived,
   fetchUserData: usersActions.fetchUserData,
 };
 export default connect(null, mapDispatch)(SearchField);
